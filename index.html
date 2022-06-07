@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorenzo Orlando - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" 
+    integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+<!-----------------HOMEPAGE----------------->
+
+    <div class="section">
+        
+        <header class="menu-container">
+
+            <ul class="menu">
+
+                <li class="menu-element presentation">Hello, i'm</li>
+                <li class="menu-element"><h2 class="name">LORENZO ORLANDO</h2></li>
+
+                <li class="menu-element">
+                    <ul class="socialmedia">
+                        <li class="social"><a href="https://www.facebook.com/lorenzo.orlando.125"><img src="assets/img/facebook.png" alt=""></a></li>
+                        <li class="social"><a href="https://www.instagram.com/yhuukee/"><img src="assets/img/instagram.png" alt=""></a></li>
+                        <li class="social"><a href="https://twitter.com/Yhuuuke"><img src="assets/img/twitter.png" alt="" ></a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </header>
+        
+        <div class="homepage">
+            
+                <section class="homepage-information">
+
+                    <h1 class="big-title">EXPLORE <br> MY MIND</h1>
+
+                    <hr class="home-line">
+
+                    <p class="home-description">HI, THIS IS MY PORTFOLIO, SCROLL DOWN TO SEE MY WORKS AND FIND OUT WHO I AM!</p>
+
+                    <button class="btn"><a href="#about">CONTACT ME</a></button>
+
+                    <img src="assets/img/Arrow.png" alt="" class="arrow">
+
+                </section>
+
+                <figure class="bg-home-images">
+
+                        <img src="assets/img/Star.png" alt="" class="star" width="320">
+                        <img src="assets/img/lines-to-right.png" alt="" class="lines-to-right" width="860">
+
+                </figure>
+        </div>    
+
+    </div>
+            
+
+
+
+
+<!-----------------WORKPAGE----------------->
+
+        <div class="workspage section">
+
+            <section class="works-container">
+
+                <h2 class="works-title">WORKS</h2>
+
+                <div class="works">
+
+                    <a class="work" href="assets/pdf/copywriting.pdf">
+                        <div class="hover-img">
+                            <p>COPYWRITING</p>
+                        </div>
+                        <img class="work-img" src="assets/img/copywriting-img.jpg" alt="" >
+                    </a>
+
+                    <a class="work" href="assets/pdf/design.pdf">
+                        <div class="hover-img">
+                            <p>DESIGN</p>
+                        </div>
+                        <img class="work-img" src="assets/img/design-img.png" alt="" >
+                    </a>
+
+                </div>
+
+                <section class="skill-container">
+
+                    <h3 class="skill-title">SKILL</h3>
+
+                    <hr class="white-line">
+
+                    <ul class="skill-box">
+                        <nav class="skill-list">                       
+                            <li class="skill">HTML/CSS</li>
+                            <li class="skill">COPYWRITING</li>
+                            <li class="skill">DESIGN</li>
+                        </nav>    
+                    </ul>
+
+                    <hr class="white-line">
+
+                </section>
+            </section>    
+
+            <figure class="bg-works-images">
+                    <img src="assets/img/lines-to-left.png" alt="" class="lines-to-left">       
+                    <img src="assets/img/purple-arrow.png" alt="" class="purple-arrow">
+            </figure>
+
+        </div>
+
+
+
+
+
+<!-----------------ABOUTPAGE----------------->
+
+        <div class="aboutpage section" id="about">
+
+            <section class="about-container">
+
+                <h2 class="about-title">ABOUT</h2>
+
+                <p class="bio">HI THERE, I'M LORENZO I'M 20 AND I COME FROM NOTO IN SICILY, A BAROQUE CITY PRETTY FAMOUS ALL OVER THE WORLD.
+                    <br>
+                    <br>
+                    IN MY FREE TIME I USUALLY LIKE TO PLAY VIDEOGAMES, OR TO READ SOME COMICS. I ALSO LIKE TO DISCOVER NEW STUFF ABOUT ASTRONOMY. 
+                    ONE OF THE THINGS I LOVE THE MOST IS PHOTOGRAPHY, WHERE AFTER A FEW YEARS I CAN SAY I'M GOOD ENOUGH.</p>
+
+                    <section class="github-container">
+                        <h3 class="github-title">GITHUB</h3>
+                            <hr class="purple-line">
+                            <p class="github"><a class="github-link" href="#">WWW.GOOGLE.COM</a></p>
+                            <hr class="purple-line">
+                    </section>
+
+                    <section class="email-container">
+                        <h3 class="email-title">EMAIL</h3>
+                            <hr class="purple-line">
+                            <p class="email">ORLANDOLORENZO2409@GMAIL.COM</p>
+                            <hr class="purple-line">
+                    </section>
+
+                </section>
+            
+            <figure class="about-image-container">
+                <img src="assets/img/my-pic.jpg" alt="" class="about-image">
+            </figure>
+
+        </div>
+
+
+
+
+
+<!-----------------JQUERY----------------->        
+
+        <script>
+
+        var media = window.matchMedia("(max-width: 1100px)")
+
+        function mediaScrollify(x){
+            if(x.matches){
+                $.scrollify.disable();
+            }else{
+                $(function() {
+              $.scrollify({
+                section : ".section",
+              });
+            })
+            }
+        }
+
+        mediaScrollify(media);
+
+        </script>
+
+</body>
+</html>

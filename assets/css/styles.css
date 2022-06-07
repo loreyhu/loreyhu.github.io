@@ -1,0 +1,775 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes leftToRight {
+    from{left: 0}
+    to{left: 185px}
+}
+
+@keyframes topToDown {
+    from{top: 0}
+    to{top: 60px}
+}
+
+@keyframes rightToLeft {
+    from{right: -200px}
+    to{right: 0}
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    color: #1C1C1C;
+    background-color: #f5f5f5;
+
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+.section{
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+/* --------------------MENU-------------------- */
+
+.menu-container{
+    height: 100px;
+    width: 100%;
+
+    background-color: #f5f5f5;
+    border-bottom: 1px #1C1C1C solid;
+
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.presentation{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.menu-element .name{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.menu-element .socialmedia{
+    width: 125px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.social img{
+    width: 30px;
+    height: 30px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+
+/* --------------------HOMEPAGE-------------------- */
+
+.homepage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage-information{
+    width: 500px;
+    height: 565px;
+
+    z-index: 1;
+
+    position: relative;
+    left: 185px;
+
+    animation-name: leftToRight;
+    animation-duration: 2s;
+}
+
+.big-title{
+    font-size: 100px;
+    line-height: 95%;
+
+    margin-bottom: 15px;
+}
+
+.home-line{
+    height: 4px;
+    width: 600px;
+
+    border: none;
+    background-color: #724CF9;
+}
+
+.home-description{
+    font-size: 20px;
+
+    margin-top: 20px;
+}
+
+.btn{
+    margin-top: 50px;
+    padding: 17px 0;
+
+    cursor: pointer;
+
+    border: none;
+
+    background-color: #724CF9;
+}
+
+.btn:hover{
+    background-color: #8969ff;
+}
+
+.btn a{
+    font-size: 15px;
+    font-family: "archivo", sans-serif;
+    font-weight: 200;
+
+    color: #fff;
+    text-decoration: none;
+
+    padding: 20px 55px;
+}
+
+.arrow{
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+}
+
+.bg-home-images{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.star{
+    position: absolute;
+    left: 0;
+    top: 60px;
+
+    animation-name: topToDown;
+    animation-duration: 2s;
+}
+
+.lines-to-right{
+    position: relative;
+    z-index: 2;
+
+    animation-name: rightToLeft;
+    animation-duration: 2s;
+}
+
+
+
+
+
+/* --------------------WORK-------------------- */
+
+.workspage{
+    background: linear-gradient(to right, #724CF9 , #8969ff);
+    
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.works-container{
+    padding-top: 70px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.works-title{
+    font-size: 80px;
+    color: #f5f5f5;
+
+    margin-bottom: 40px;
+}
+
+.works{
+    height: auto;
+    width: 800px;
+
+    display: flex;
+    justify-content: space-around;
+
+    z-index: 1;
+}
+
+.work{
+    position: relative;
+}
+
+.work:hover .hover-img{
+    display: block;
+}
+
+.hover-img{
+    display: none;
+
+    font-size: 30px;
+    font-family: "archivo", sans-serif;
+
+    text-align: center;
+    color: #f5f5f5;
+
+    background-color: #00000088;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.hover-img p {
+    margin-top: 140px;
+}
+
+.work-img{
+    box-shadow: #1c1c1caf 3px 4px 5px;
+}
+
+.skill-container{
+    margin-top: 100px;
+
+    z-index: 1;
+}
+
+.skill-title{
+    color: #f5f5f5;
+    font-size: 40px;
+    text-align: center;
+}
+
+.skill-box{
+    display: flex;
+    justify-content: center;
+}
+
+.skill-list{
+    margin: 15px 0;
+    width: 800px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.white-line:first-of-type{
+    margin-top: 20px;
+}
+
+.white-line{
+    height: 2px;
+    width: 100%;
+    
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.skill{
+    font-size: 25px;
+    color: #f5f5f5;
+}
+
+.bg-works-images{
+    width: 790px;
+    height: 890px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+}
+
+.lines-to-left{
+    opacity: 0.5;
+
+    position: absolute;
+    bottom: -10px;
+}
+
+.purple-arrow{
+    position: absolute;
+    bottom: 65px;
+    left: 185px;
+}
+
+
+
+
+
+
+/* --------------------ABOUT-------------------- */
+
+.aboutpage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container{
+    height: 950px;
+    width: 650px;
+
+    margin-left: 185px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-title{
+    font-size: 80px;
+}
+
+.bio{
+    font-size: 20px;
+    line-height: 25px;
+    word-spacing: 1px;
+
+    margin: 15px 0 40px 0;
+}
+
+.github-container, .email-container{
+    margin-top: 30px;
+}
+
+.github-title, .email-title{
+    font-size: 30px;
+    color: #724CF9;
+
+}
+
+.purple-line{
+    height: 2px;
+    width: 680px;
+
+    border: none;
+    background-color: #724CF9;
+}
+
+.purple-line:first-of-type{
+    margin-top: 15px;
+}
+
+.github, .email{
+    font-size: 20px;
+
+    margin: 10px 0;
+}
+
+.github-link{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+.about-image-container{
+    display: flex;
+    align-items: center;
+}
+
+.about-image{
+    width: 70%;
+    margin-left: 100px;
+    margin-right: -46px;
+}
+
+
+
+
+
+/*--------------------MEDIA QUERIES--------------------*/
+
+@media only screen and (max-width: 1600px){
+
+    .bg-home-images{
+        overflow: initial;
+    }
+
+    .star{
+        margin-left: 180px;
+        width: 40%;
+    }
+
+    .arrow, .purple-arrow{
+        display: none;
+    }
+
+    .menu-element .name{
+        font-size: 40px;
+    }
+
+    .presentation{
+        font-size: 20px;
+    }
+
+    .menu-element .socialmedia{
+        width: 110px;
+    }
+
+    .social img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .about-container{
+        margin-left: 100px;
+    }
+
+    .about-title{
+        font-size: 60px;
+    }
+    
+    .github-title, .email-title{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .purple-line{
+        width: 600px;
+    }
+    
+    .github, .email{
+        font-size: 20px;
+    }
+
+    .about-image{
+        width: 70%;
+        margin-left: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px){
+
+    .section:first-of-type{
+        min-height: 70vh;
+    }
+
+    .menu-element .name{
+        font-size: 30px;
+    }
+
+    .presentation{
+        font-size: 18px;
+    }
+
+    .homepage{
+        min-height: 60vh;
+    }
+
+    .bg-home-images{
+        display: none;
+    }
+
+    .homepage .big-title {
+        text-align: center;
+    }
+
+    .homepage-information{
+        width: 70%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: static;
+
+        margin: 0 auto;
+
+        animation: none;
+    }
+
+    .workspage{
+        min-height: 750px;
+    }
+
+    .works-container{
+        max-width: 70%;
+    }
+
+    .works-title{
+        font-size: 60px;
+    }
+
+    .works{
+        width: 600px;
+    }
+
+    .work-img{
+        width: 250px;
+    }
+
+    .hover-img{
+        display: block;
+    }
+
+    .hover-img p {
+        font-size: 25px;
+
+        margin-top: 110px;
+    }
+
+    .skill-title{
+        font-size: 40px;
+    }
+
+    .skill-list{
+        width: 600px;
+        
+        margin: 10px 0;
+    }
+    
+    .skill{
+        font-size: 20px;
+    }
+
+    .aboutpage{
+        margin-bottom: 100px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .about-container{
+        height: 600px;
+        width: 85%;
+
+        margin: 20px 0;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .about-title{
+        font-size: 60px;
+    }
+    
+    .github-title, .email-title{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .purple-line{
+        height: 2px;
+        width: 600px;
+    }
+    
+    .github, .email{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .about-image-container{
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 80px;
+    }
+
+    .about-image{
+        width: 30%;
+
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+
+    .section:first-of-type{
+        min-height: 75vh;
+    }
+
+    .menu-container{
+        height: 60px;
+    }    
+
+    .menu-element .name{
+        font-size: 18px;
+    }
+
+    .presentation{
+        display: none;
+    }
+
+    .menu-element .socialmedia{
+        width: 80px;
+    }
+
+    .social img{
+        width: 18px;
+        height: 18px;
+    }
+
+    .homepage{
+        display: flex;
+        align-items: center;
+    }
+
+    .homepage-information{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .big-title{
+        font-size: 60px;
+    }
+    
+    .home-line{
+        width: 100%;
+    }
+    
+    .home-description{
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .btn{
+        padding: 14px 0;
+        margin-top: 30px;
+    }
+
+    .btn a{
+        font-size: 12px;
+    }
+
+    .workspage{
+        height: 1000px;
+    }
+
+    .works-container{
+        max-width: 80%;
+
+        padding-top: 50px;
+    }
+
+    .works-title{
+        font-size: 40px;
+    }
+
+    .works{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .work-img{
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .hover-img{
+        height: 94%;
+    }
+
+    .skill-container{
+        width: 100%;
+    }
+
+    .skill-title{
+        font-size: 30px;
+    }
+
+    .skill-list{
+        width: 400px;
+        
+        margin: 10px 0;
+    }
+    
+    .skill{
+        font-size: 13px;
+    }
+
+    .aboutpage{
+        margin-bottom: 0;
+    }
+
+    .about-container{
+        height: 550px;
+        width: 75%;
+
+        margin-top: 50px;
+    }
+
+    .about-title{
+        font-size: 40px;
+    }
+
+    .bio{
+        font-size: 13px;
+    }
+
+    .github-container, .email-container{
+        width: 100%;
+    }
+
+    .purple-line{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .github-title, .email-title{
+        font-size: 25px;
+    }
+
+    .github, .email{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .about-image-container{
+        margin: 40px 0 50px 0;
+    }
+
+    .about-image{
+        width: 50%;
+    }
+}
