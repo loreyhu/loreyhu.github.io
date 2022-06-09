@@ -729,7 +729,8 @@ ul{
     }
     
     .skill{
-        font-size: 13px;
+        font-size: 12px;
+        margin: 0 5px;
     }
 
     .aboutpage{
