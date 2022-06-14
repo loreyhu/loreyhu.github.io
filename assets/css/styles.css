@@ -660,6 +660,10 @@ ul{
         max-height: 80%;
     }
 
+    .section:last-of-type{
+        min-height: 100%;
+    }    
+
     .menu-container{
         position: fixed;
         z-index: 5;
