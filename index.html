@@ -9,19 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" 
-    integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
 
 <!-----------------HOMEPAGE----------------->
-
+<div class="scroll-container">
     <div class="section">
-        
+            
         <header class="menu-container">
 
             <ul class="menu">
@@ -31,9 +26,9 @@
 
                 <li class="menu-element">
                     <ul class="socialmedia">
-                        <li class="social"><a href="https://www.facebook.com/lorenzo.orlando.125"><img src="assets/img/facebook.png" alt=""></a></li>
-                        <li class="social"><a href="https://www.instagram.com/yhuukee/"><img src="assets/img/instagram.png" alt=""></a></li>
-                        <li class="social"><a href="https://twitter.com/Yhuuuke"><img src="assets/img/twitter.png" alt="" ></a></li>
+                        <li class="social"><a href="https://www.facebook.com/lorenzo.orlando.125"><img src="assets/img/facebook.png" alt="facebook icon"></a></li>
+                        <li class="social"><a href="https://www.instagram.com/yhuukee/"><img src="assets/img/instagram.png" alt="instagram icon"></a></li>
+                        <li class="social"><a href="https://twitter.com/Yhuuuke"><img src="assets/img/twitter.png" alt="twitter icon" ></a></li>
                     </ul>
                 </li>
 
@@ -53,14 +48,14 @@
 
                     <button class="btn"><a href="#about">CONTACT ME</a></button>
 
-                    <img src="assets/img/Arrow.png" alt="" class="arrow">
+                    <img src="assets/img/Arrow.png" class="arrow" alt="arrow">
 
                 </section>
 
                 <figure class="bg-home-images">
 
-                        <img src="assets/img/Star.png" alt="" class="star" width="320">
-                        <img src="assets/img/lines-to-right.png" alt="" class="lines-to-right" width="860">
+                        <img src="assets/img/Star.png" class="star" width="320" alt="star">
+                        <img src="assets/img/lines-to-right.png"  class="lines-to-right" width="860" alt="lines">
 
                 </figure>
         </div>    
@@ -85,14 +80,14 @@
                         <div class="hover-img">
                             <p>COPYWRITING</p>
                         </div>
-                        <img class="work-img" src="assets/img/copywriting-img.jpg" alt="" >
+                        <img class="work-img" loading="lazy" src="assets/img/copywriting-img.jpg" alt="copywriting picture">
                     </a>
 
                     <a class="work" href="assets/pdf/design.pdf">
                         <div class="hover-img">
                             <p>GRAPHIC DESIGN</p>
                         </div>
-                        <img class="work-img" src="assets/img/design-img.png" alt="" >
+                        <img class="work-img" loading="lazy" src="assets/img/design-img.png" alt="graphic design picture">
                     </a>
 
                 </div>
@@ -117,8 +112,8 @@
             </section>    
 
             <figure class="bg-works-images">
-                    <img src="assets/img/lines-to-left.png" alt="" class="lines-to-left">       
-                    <img src="assets/img/purple-arrow.png" alt="" class="purple-arrow">
+                    <img src="assets/img/lines-to-left.png" class="lines-to-left" alt="lines">       
+                    <img src="assets/img/purple-arrow.png" class="purple-arrow" alt="arrow">
             </figure>
 
         </div>
@@ -155,39 +150,13 @@
                             <hr class="purple-line">
                     </section>
 
-                </section>
+            </section>
             
             <figure class="about-image-container">
-                <img src="assets/img/my-pic.jpg" alt="" class="about-image">
+                <img src="assets/img/my-pic.jpg" class="about-image" alt="my picture">
             </figure>
 
         </div>
-
-
-
-
-
-<!-----------------JQUERY----------------->        
-
-        <script>
-
-        var media = window.matchMedia("(max-width: 1100px)")
-
-        function mediaScrollify(x){
-            if(x.matches){
-                $.scrollify.disable();
-            }else{
-                $(function() {
-              $.scrollify({
-                section : ".section",
-              });
-            })
-            }
-        }
-
-        mediaScrollify(media);
-
-        </script>
-
+</div>    
 </body>
 </html>
