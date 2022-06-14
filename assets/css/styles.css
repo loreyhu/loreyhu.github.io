@@ -509,7 +509,7 @@ ul{
     }
     
     .section:last-of-type{
-        max-height: 1200px;
+        max-height: 90%;
     }    
 
     .menu-element .name{
@@ -657,7 +657,7 @@ ul{
 @media only screen and (max-width: 767px){
 
     .section:first-of-type{
-        max-height: 800px;
+        max-height: 80%;
     }
 
     .menu-container{
